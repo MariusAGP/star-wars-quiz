@@ -123,6 +123,39 @@ enum QuizDataService {
                 correctAnswerIndex: 1,
                 explanation: "The Death Star was the Empire's moon-sized superweapon."
             ),
+
+
+            Question(
+                type: .matching,
+                text: "Match each character to their home planet:",
+                matchingPairs: [
+                    MatchingPair(left: "Luke Skywalker", right: "Tatooine"),
+                    MatchingPair(left: "Padmé Amidala", right: "Naboo"),
+                    MatchingPair(left: "Chewbacca", right: "Kashyyyk"),
+                    MatchingPair(left: "Lando Calrissian", right: "Socorro"),
+                ]
+            ),
+            Question(
+                type: .matching,
+                text: "Match each ship to its pilot:",
+                explanation: "Anakin flew a Naboo Starfighter during the Battle of Naboo in Episode I.",
+                matchingPairs: [
+                    MatchingPair(left: "Millennium Falcon", right: "Han Solo"),
+                    MatchingPair(left: "Slave I", right: "Boba Fett"),
+                    MatchingPair(left: "X-Wing (Red Five)", right: "Luke Skywalker"),
+                    MatchingPair(left: "Naboo Starfighter", right: "Anakin Skywalker"),
+                ]
+            ),
+            Question(
+                type: .matching,
+                text: "Match each lightsaber color to its wielder:",
+                matchingPairs: [
+                    MatchingPair(left: "Purple", right: "Mace Windu"),
+                    MatchingPair(left: "Green", right: "Yoda"),
+                    MatchingPair(left: "Red (dual)", right: "Darth Maul"),
+                    MatchingPair(left: "White", right: "Ahsoka Tano"),
+                ]
+            ),
         ]
     }
 
