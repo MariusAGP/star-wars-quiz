@@ -9,14 +9,14 @@ struct ImageQuestionView: View {
             if let imageName = question.imageName {
                 Image(imageName)
                     .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
+                    .scaledToFit()
+                    .frame(maxWidth: .infinity)
+                    .frame(maxHeight: 220)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
-                            .stroke(AppTheme.starWarsYellow.opacity(0.2), lineWidth: 1)
+                            .stroke(AppTheme.cardBorder, lineWidth: 1)
                     )
-                    .shadow(color: AppTheme.starWarsYellow.opacity(0.15), radius: 12)
                     .padding(.bottom, 4)
             }
 

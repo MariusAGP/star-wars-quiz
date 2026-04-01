@@ -19,9 +19,9 @@ enum AppTheme {
     // MARK: - Background
     static let backgroundGradient = LinearGradient(
         colors: [
-            Color(red: 0.01, green: 0.01, blue: 0.04),
-            Color(red: 0.04, green: 0.03, blue: 0.12),
-            Color(red: 0.02, green: 0.02, blue: 0.06),
+            Color(red: 0.07, green: 0.07, blue: 0.09),
+            Color(red: 0.10, green: 0.10, blue: 0.13),
+            Color(red: 0.07, green: 0.07, blue: 0.09),
         ],
         startPoint: .top,
         endPoint: .bottom
@@ -86,11 +86,8 @@ struct ThemedBackground: ViewModifier {
         content
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
-                ZStack {
-                    AppTheme.backgroundGradient
-                    StarfieldView()
-                }
-                .ignoresSafeArea()
+                AppTheme.backgroundGradient
+                    .ignoresSafeArea()
             }
     }
 }
