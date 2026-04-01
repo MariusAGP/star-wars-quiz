@@ -27,6 +27,8 @@ struct QuizView: View {
                         TrueFalseView(question: question, viewModel: viewModel)
                     case .imageQuestion:
                         ImageQuestionView(question: question, viewModel: viewModel)
+                    case .matching:
+                        MatchingQuestionView(question: question, viewModel: viewModel)
                     }
                 }
                 .transition(.asymmetric(
